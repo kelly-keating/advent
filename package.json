@@ -1,0 +1,15 @@
+{
+  "name": "advent",
+  "version": "1.0.0",
+  "description": "My advent code for adventofcode.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kelly-keating/advent.git"
+  },
+  "main": "index.js",
+  "author": "Kelly Keating",
+  "license": "MIT",
+  "dependencies": {
+    "crypto": "^1.0.1"
+  }
+}

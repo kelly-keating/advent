@@ -1025,6 +1025,29 @@ function notNaughty(str) {
     return true
 }
 
+function doublePair(str) {
+    let doubleFound = false
+    for(let i = 0; i < str.length - 3 && !doubleFound; i++){
+        let pair = str.substring(i, i+2) 
+        let remaining = str.substring(i+2)
+        if(remaining.includes(pair)){
+            doubleFound = true
+        }
+    }
+    return doubleFound
+}
+
+function shortPalindrome(str) {
+
+}
+
 let nice = strs.filter(word => hasVowels(word) && hasDoubles(word) && notNaughty(word))
 
 console.log(nice.length)
+
+// It contains a pair of any two letters that appears at least twice in the string without overlapping, like xyxy (xy) or aabcdefgaa (aa), but not like aaa (aa, but it overlaps).
+// It contains at least one letter which repeats with exactly one letter between them, like xyx, abcdefeghi (efe), or even aaa.
+
+// let niceToo = strs.filter(word => doublePair(word) && shortPalindrome(word))
+
+// console.log(niceToo.length)

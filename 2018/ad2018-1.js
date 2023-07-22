@@ -1037,3 +1037,4 @@ function searchForDupes (){
 run()
 
 console.log("final", dupe)
+console.log(previous.length)
